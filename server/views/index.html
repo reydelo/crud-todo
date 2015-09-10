@@ -41,16 +41,13 @@
         </tr>
         </thead>
         <tbody id="kitten-results">
+          {% for kitten in kittens %}
           <tr class="warning">
-            <td>Dahl</td>
-            <td>Black</td>
-            <td>Female</td>
+            <td>{{ kitten.name }}</td>
+            <td>{{ kitten.color }}</td>
+            <td>{{ kitten.gender }}</td>
           </tr>
-          <tr>
-            <td>Dahl</td>
-            <td>Black</td>
-            <td>Female</td>
-          </tr>
+          {% endfor %}
         </tbody>
       </table>
     </div>
