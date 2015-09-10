@@ -8,7 +8,52 @@
   <div class="container">
 
     <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+
+    <form class="has-warning" method="POST" action="/">
+      <div class="form-group">
+        <label for="kitten-name">Kitten Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label for="kitten-color">Kitten Color</label>
+        <input type="text" class="form-control" name="color" placeholder="Color">
+      </div>
+      <div class="form-group">
+        <label class="radio-inline">
+          <input type="radio" name="gender" value="male"> Male Kitty
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="gender" value="female"> Female Kitty
+        </label>
+      </div>
+      <button type="submit" class="btn btn-warning">Create that Kitten!</button>
+    </form>
+
+    <br>
+
+    <div class="kitty-table">
+      <table class="table table-striped warning">
+        <thead>
+        <tr>
+          <th>Kitten Name</th>
+          <th>Kitten Color</th>
+          <th>Kitten Gender</th>
+        </tr>
+        </thead>
+        <tbody id="kitten-results">
+          <tr class="warning">
+            <td>Dahl</td>
+            <td>Black</td>
+            <td>Female</td>
+          </tr>
+          <tr>
+            <td>Dahl</td>
+            <td>Black</td>
+            <td>Female</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
   </div>
 
