@@ -7,6 +7,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
 
+// *** mongoose config *** //
+require('../schema');
 
 // *** routes *** //
 var routes = require('./routes/index.js');
